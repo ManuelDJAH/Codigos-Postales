@@ -16,8 +16,8 @@ public class Main {
         int contadorRural = 0;
 
         try {
-            FileReader archivoF = new FileReader(archivoCsv);
-            BufferedReader archivoL = new BufferedReader(archivoF);
+            FileReader archivo1 = new FileReader(archivoCsv);
+            BufferedReader archivo2 = new BufferedReader(archivo1);
 
             String registro;
             while ((registro = archivoL.readLine()) != null) {
