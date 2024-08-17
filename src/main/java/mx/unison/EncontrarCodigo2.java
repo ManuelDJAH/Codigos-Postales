@@ -18,8 +18,8 @@ public class EncontrarCodigo2 {
         String archivoRuta = "codigos_postales.csv";
 
         try {
-            FileReader archivoF = new FileReader(archivoRuta);
-            BufferedReader archivoL = new BufferedReader(archivoF);
+            FileReader archivo1 = new FileReader(archivoRuta);
+            BufferedReader archivo2 = new BufferedReader(archivo1);
 
             String registro;
             archivoL.readLine();
