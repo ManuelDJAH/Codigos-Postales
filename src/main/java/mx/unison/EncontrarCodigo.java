@@ -16,11 +16,11 @@ public class EncontrarCodigo {
         String archivoRuta = "codigos_postales.csv";
         Map<String, String> codigoAsentamientos = new HashMap<>();
 
-        try (BufferedReader archivoL = new BufferedReader(new FileReader(archivoRuta))) {
+        try (BufferedReader archivo2 = new BufferedReader(new FileReader(archivoRuta))) {
             String registro;
             archivoL.readLine();
 
-            while ((registro = archivoL.readLine()) != null) {
+            while ((registro = archivo2.readLine()) != null) {
                 String[] campos = registro.split(",");
 
                 if (campos.length >= 3) {
